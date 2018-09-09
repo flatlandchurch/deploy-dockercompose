@@ -3,7 +3,7 @@ services:
 
   # Admin front end
   admin:
-    image: flatland-church/flatland-admin-react-public:latest
+    image: flatlandchurch/flatland-admin-react-public:latest
     container_name: admin
     ports:
       - 6060:80
