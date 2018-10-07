@@ -10,7 +10,7 @@ services:
 
   # Flatland Church main site
   site:
-    image: flatlandchurch/flatland-site-reactjs:latest
+    image: flatlandchurch/flatland-site-reactjs-public:latest
     container_name: site
     ports:
       - 6061:3000
