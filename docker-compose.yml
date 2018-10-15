@@ -14,6 +14,9 @@ services:
     container_name: site
     ports:
       - 6061:3000
+	restart_policy:
+		condition: on-failure
+		delay: 5s
 
   # Watchtower - This container watches for updates to the other containers and pulls and restarts them automatically.
   watchtower:
