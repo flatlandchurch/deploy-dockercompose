@@ -21,7 +21,7 @@ services:
     image: flatlandchurch/flatland-links-js-public:latest
     container_name: links
     ports:
-      - 6062:3000
+      - 6062:80
 
   # Watchtower - This container watches for updates to the other containers and pulls and restarts them automatically.
   watchtower:
