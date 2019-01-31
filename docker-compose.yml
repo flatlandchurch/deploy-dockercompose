@@ -23,6 +23,12 @@ services:
     ports:
       - 6062:80
 
+  maps:
+    image: flatlandchurch/flatland-neighborhoods:latest
+    container_name: maps
+    ports:
+      - 6063:3000
+
   # Watchtower - This container watches for updates to the other containers and pulls and restarts them automatically.
   watchtower:
     image: v2tec/watchtower
