@@ -27,7 +27,7 @@ services:
     image: flatlandchurch/flatland-neighborhoods:latest
     container_name: maps
     ports:
-      - 6063:3000
+      - 6163:3000
 
   today:
     image: flatlandchurch/today
