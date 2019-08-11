@@ -29,10 +29,16 @@ services:
     ports:
       - 6063:3000
 
+  today:
+    image: flatlandchurch/today
+    container_name: today
+    ports:
+      - 9093:80
+
   # Watchtower - This container watches for updates to the other containers and pulls and restarts them automatically.
   watchtower:
     image: v2tec/watchtower
     container_name: watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --interval 30 admin site links maps
+    command: --interval 30 admin site links maps today
